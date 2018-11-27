@@ -22,7 +22,7 @@ class TestDatabase(unittest.TestCase):
         '''
         results = cur.execute(sql)
         result_list = results.fetchall()
-        #print(result_list)
+        # print(result_list)
         self.assertEqual(len(result_list), 8)
         self.assertEqual(result_list[0][3], 4.0)
 
